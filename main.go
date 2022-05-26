@@ -1,18 +1,20 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
+
 func main() {
-	// Declaractive way declara a Variable
-	var age int;
 
-	age = 25;
+	nameOne := "Bangladesh"
+	nameTwo := "India"
 
-	fmt.Println(age)
+	x, y := swap(nameOne, nameTwo)
 
-	// Short     
-	name := "MOHOSIN";
-	fmt.Println("Hello World")
-	fmt.Println(name)
+	fmt.Println("Swap Name ")
+	fmt.Println(x)
+	fmt.Println(y)
+
+}
+
+func swap(nameOne, nameTwo string) (string, string) {
+	return nameTwo, nameOne
 }
