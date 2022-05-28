@@ -37,3 +37,18 @@ Declaractive `var name string;`
 
     2	Call by reference
     This method copies the address of an argument into the formal parameter. Inside the function, the address is used to access the actual argument used in the call. This means that changes made to the parameter affect the argument.
+
+   ## Pointers 
+
+   Pointers in Go are easy and fun to learn. Some Go programming tasks are performed more easily with pointers, and other tasks, such as call by reference, cannot be performed without using pointers. So it becomes necessary to learn pointers to become a perfect Go programmer.
+
+   As you know, every variable is a memory location and every memory location has its address defined which can be accessed using ampersand (&) operator, which denotes an address in memory. Consider the following example, which will print the address of the variables defined −
+
+   ## What Are Pointers?
+   A pointer is a variable whose value is the address of another variable, i.e., direct address of the memory location. Like any variable or constant, you must declare a pointer before you can use it to store any variable address. The general form of a pointer variable declaration is −
+
+   `var var_name *var-type`
+   `var ip *int /* pointer to an integer */`
+   `var fp *float32 /* pointer to a float */`
+
+   
