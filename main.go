@@ -2,22 +2,18 @@ package main
 
 import (
 	"fmt"
-	"math"
 )
-
-/* define a circle */
-type Circle struct {
-   x,y,radius float64
-}
-
-/* define a method for circle */
-
-
-
-func(circle Circle) area() float64 {
-	return math.Pi * circle.radius * circle.radius
-}
-func main(){
-   circle := Circle{x:1, y:3, radius:22}
-   fmt.Printf("Circle area: %f", circle.area())
-}
+func main() {
+	var n [10] int /* n is an array of 10 integers */
+	var i,j int
+ 
+	/* initialize elements of array n to 0 */         
+	for i = 0; i < 10; i++ {
+	   n[i] = i + 100 /* set element at location i to i + 100 */
+	}
+	
+	/* output each array element's value */
+	for j = 0; j < 10; j++ {
+	   fmt.Printf("Element[%d] = %d\n", j, n[j] )
+	}
+ }
