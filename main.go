@@ -1,20 +1,23 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
-func main() {
-
-	nameOne := "Bangladesh"
-	nameTwo := "India"
-
-	x, y := swap(nameOne, nameTwo)
-
-	fmt.Println("Swap Name ")
-	fmt.Println(x)
-	fmt.Println(y)
-
+/* define a circle */
+type Circle struct {
+   x,y,radius float64
 }
 
-func swap(nameOne, nameTwo string) (string, string) {
-	return nameTwo, nameOne
+/* define a method for circle */
+
+
+
+func(circle Circle) area() float64 {
+	return math.Pi * circle.radius * circle.radius
+}
+func main(){
+   circle := Circle{x:1, y:3, radius:22}
+   fmt.Printf("Circle area: %f", circle.area())
 }
