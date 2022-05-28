@@ -51,4 +51,17 @@ Declaractive `var name string;`
    `var ip *int /* pointer to an integer */`
    `var fp *float32 /* pointer to a float */`
 
+ ## Structures
+   Structure is another user-defined data type available in Go programming, which allows you to combine data items of different kinds.
    
+   
+   `type struct_variable_type struct {`
+      `member definition;`
+      `member definition;`
+      `...`
+      `member definition;`
+   `}`
+   
+   Once a structure type is defined, it can be used to declare variables of that type using the following syntax.
+
+   `variable_name := structure_variable_type {value1, value2...valuen}`
